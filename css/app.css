@@ -1,8 +1,11 @@
 @import "../node_modules/normalize.css/normalize.css";
 
+* {
+  position: relative;
+}
+
 body, div, span {
   box-sizing: border-box;
-  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -58,6 +61,7 @@ a:hover {
   text-decoration: none;
 }
 
+
 .content {
   flex-direction: column;
   align-items: center;
@@ -85,7 +89,7 @@ nav a {
 
 .iphone-demo {
   flex-direction: column;
-  align-items: ccenter;
+  align-items: center;
   justify-content: center;
   flex-grow: 1;
   flex-basis: 0;
@@ -99,4 +103,61 @@ nav a {
   flex-grow: 1;
   flex-basis: 0;
   align-self: stretch;
+}
+
+.tumblr-demo-img, .swype-demo-img {
+  position: absolute;
+  top: 90px;
+  left: 25px;
+}
+
+#android-robot {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform: rotate(-45deg) translate(-5%,60%);
+}
+
+#slider-control {
+  padding: 3px;
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
+}
+
+#slider-control {
+   position: fixed;
+   top: 50%;
+   right: 0px;
+}
+
+#intro-section {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
+}
+
+.title {
+  z-index: 255;
 }
